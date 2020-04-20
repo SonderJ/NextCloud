@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "hello1"
 usage() {
 cat << _EOF_
 Usage: ${0} "ROOT PASSWORD"
