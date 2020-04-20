@@ -1,4 +1,6 @@
 #!/bin/sh
+set -o errexit # abort on nonzero exitstatus
+set -o nounset # abort on unbound variable
 usage() {
 cat << _EOF_
 Usage: ${0} "ROOT PASSWORD"
@@ -9,7 +11,7 @@ _EOF_
 # Predicate that returns exit status 0 if the database root password
 # is set, a nonzero exit status otherwise.
 is_mysql_root_password_set() {
-  ! mysqladmin --user=root status > /dev/null 2>&1
+! mysqladmin --user=root status > /dev/null 2>&1
 }
 # Predicate that returns exit status 0 if the mysql(1) command is available,
 # nonzero exit status otherwise.
