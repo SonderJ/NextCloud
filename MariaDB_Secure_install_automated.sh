@@ -6,7 +6,7 @@
 #
 # Tested on CentOS 6, CentOS 7, Ubuntu 12.04 LTS (Precise Pangolin), Ubuntu
 # 14.04 LTS (Trusty Tahr).
-
+echo "hello1"
 set -o errexit # abort on nonzero exitstatus
 set -o nounset # abort on unbound variable
 
