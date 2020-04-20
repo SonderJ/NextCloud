@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 #
 # Author: Bert Van Vreckem <bert.vanvreckem@gmail.com>
 #
